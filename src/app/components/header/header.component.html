@@ -1,0 +1,36 @@
+<header class="navbar">
+  <div class="container-header">
+    <div class="logo">
+      <a href="/" class="logo-link">
+        <span class="logo-text">
+          <span class="logo-fgts">{{ getLogo().fgts }}</span
+          ><span class="logo-inovac">{{ getLogo().inovac }}</span>
+        </span>
+      </a>
+    </div>
+
+    <button
+      class="menu-toggle"
+      (click)="toggleMenu()"
+      [class.active]="isMenuOpen"
+      [attr.aria-expanded]="isMenuOpen"
+      aria-label="Toggle navigation menu"
+    >
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="menus" [class.active]="isMenuOpen">
+      <ul role="menubar">
+        @for (item of getMenuItems(); track item.id) {
+        <li
+          role="menuitem"
+          [attr.data-target]="item.target"
+          (click)="onMenuItemClick(item)"
+        >
+          {{ item.label }}
+        </li>
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

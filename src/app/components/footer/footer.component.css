@@ -1,0 +1,438 @@
+.footer {
+  background: var(--color-primary-dark); /* #262626 */
+  color: var(--text-light);
+  position: relative;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Footer Main Content */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-2xl);
+  padding: var(--spacing-4xl) 0 var(--spacing-2xl);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-3xl);
+}
+
+/* Company Info Section */
+.footer-logo {
+  margin-bottom: var(--spacing-md);
+}
+
+.logo-text {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.logo-fgts {
+  color: var(--color-accent-medium);
+}
+
+.logo-inovac {
+  color: var(--color-accent-light);
+}
+
+.footer-description {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  color: var(--color-primary-gray);
+  margin: 0;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-normal);
+  text-decoration: none;
+}
+
+.social-link.whatsapp {
+  background: var(--color-accent-light);
+  color: var(--color-primary-dark);
+}
+
+.social-link.whatsapp:hover {
+  background: var(--color-accent-medium);
+  color: var(--text-light);
+  transform: scale(1.1);
+}
+
+.social-link.facebook {
+  background: var(--color-accent-light);
+  color: var(--color-primary-dark);
+}
+
+.social-link.facebook:hover {
+  background: #1877f2;
+  color: var(--text-light);
+  transform: scale(1.1);
+}
+
+/* Footer Titles */
+.footer-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent-light);
+  margin: 0 0 var(--spacing-sm);
+  position: relative;
+}
+
+.footer-title::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--color-accent-medium);
+  border-radius: var(--border-radius-full);
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer-links a {
+  color: var(--color-primary-gray);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  transition: var(--transition-normal);
+  position: relative;
+}
+
+.footer-links a:hover {
+  color: var(--color-accent-light);
+  padding-left: var(--spacing-xs);
+}
+
+.footer-links a::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--color-accent-medium);
+  border-radius: 50%;
+  opacity: 0;
+  transition: var(--transition-normal);
+}
+
+.footer-links a:hover::before {
+  opacity: 1;
+  left: -12px;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary-gray);
+}
+
+.contact-item svg {
+  color: var(--color-accent-medium);
+  flex-shrink: 0;
+}
+
+/* Business Hours */
+.business-hours {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-xs) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hours-item:last-child {
+  border-bottom: none;
+}
+
+.day {
+  color: var(--color-primary-gray);
+}
+
+.time {
+  color: var(--color-accent-light);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--spacing-lg) 0;
+  margin-top: var(--spacing-xl);
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.copyright {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary-gray);
+  margin: 0;
+}
+
+/* Footer Credits */
+.footer-credits {
+  text-align: right;
+}
+
+.credits-text {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  color: var(--color-primary-gray);
+}
+
+.developer-name {
+  color: var(--color-accent-light);
+  font-weight: var(--font-weight-semibold);
+  position: relative;
+  transition: var(--transition-normal);
+}
+
+.developer-name:hover {
+  color: var(--color-accent-medium);
+}
+
+.developer-name::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent-medium);
+  transition: var(--transition-normal);
+}
+
+.developer-name:hover::after {
+  width: 100%;
+}
+
+.footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.footer-bottom-links a {
+  color: var(--color-primary-gray);
+  text-decoration: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  transition: var(--transition-normal);
+}
+
+.footer-bottom-links a:hover {
+  color: var(--color-accent-light);
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Background Decoration */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    var(--color-accent-medium) / 8 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(
+    circle,
+    var(--color-accent-light) / 5 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-3xl) 0 var(--spacing-xl);
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+  }
+
+  .footer-links a::before,
+  .footer-links a:hover::before {
+    display: none;
+  }
+
+  .footer-links a:hover {
+    padding-left: 0;
+  }
+
+  .footer-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+  }
+
+  .footer-credits {
+    text-align: center;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .business-hours {
+    align-items: center;
+  }
+
+  .hours-item {
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: var(--spacing-2xl) 0 var(--spacing-lg);
+    gap: var(--spacing-lg);
+  }
+
+  .footer-container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .logo-text {
+    font-size: var(--font-size-xl);
+  }
+
+  .footer-title {
+    font-size: var(--font-size-base);
+  }
+
+  .footer-description,
+  .contact-item,
+  .hours-item,
+  .copyright,
+  .footer-links a,
+  .footer-bottom-links a {
+    font-size: var(--font-size-xs);
+  }
+
+  .social-link {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer-bottom {
+    margin-top: 1rem;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .credits-text {
+    font-size: var(--font-size-xs);
+  }
+
+  .separator {
+    display: none;
+  }
+}
