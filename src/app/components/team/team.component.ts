@@ -20,11 +20,27 @@ export class TeamComponent {
   teamMembers: TeamMember[] = [
     {
       id: 1,
-      name: 'Claudiani Inovac',
+      name: 'Maria Helena',
       position: 'Consultora Financeira',
-      image: 'assets/images/claudiani.jpg',
+      image: 'assets/images/woman1.jpg',
       whatsapp: '5511999999999',
-      facebook: 'profile.php?id=61580237822418',
+      facebook: 'facebook.com',
+    },
+    {
+      id: 2,
+      name: 'Renata Miranda',
+      position: 'Consultora Financeira',
+      image: 'assets/images/woman2.jpg',
+      whatsapp: '5511999999999',
+      facebook: 'facebook.com',
+    },
+    {
+      id: 3,
+      name: 'André Roberto',
+      position: 'Consultor Financeira',
+      image: 'assets/images/man.jpg',
+      whatsapp: '5511999999999',
+      facebook: 'facebook.com',
     },
   ];
 
